@@ -1,6 +1,6 @@
 public class Character {
     private String name;
-    private String clas;
+    private String characterClass;
     private int lifePoints;
     private int damageMax;
     private int damageMin;
@@ -9,11 +9,19 @@ public class Character {
     // constructor
     public Character(String name, String clas, int lifePoints, int damageMax, int damageMin, Guns guns){
         this.name = name;
-        this.clas = clas;
+        this.characterClass = characterClass;
         this.lifePoints = 100;
         this.damageMax = 30;
         this.damageMin = 20;
         this.guns = guns;
     }
+
+    //Getter
+    public String getName(){
+        return name;
+    }
+
+    public String
+
 
 }
