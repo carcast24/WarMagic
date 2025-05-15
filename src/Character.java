@@ -6,4 +6,14 @@ public class Character {
     private int damageMin;
     private Guns guns;
 
+    // constructor
+    public Character(String name, String clas, int lifePoints, int damageMax, int damageMin, Guns guns){
+        this.name = name;
+        this.clas = clas;
+        this.lifePoints = 100;
+        this.damageMax = 30;
+        this.damageMin = 20;
+        this.guns = guns;
+    }
+
 }
