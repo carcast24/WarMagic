@@ -13,7 +13,7 @@ public class Character {
         this.lifePoints = 100;
         this.damageMax = 30;
         this.damageMin = 20;
-        this.guns = guns;
+        this.guns = null;
     }
 
     //Getter
@@ -40,6 +40,9 @@ public class Character {
     public Guns getGuns(){
         return guns;
     }
+
+
+
 
 
 }
