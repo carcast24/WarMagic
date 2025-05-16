@@ -7,7 +7,7 @@ public class Character {
     private Guns guns;
 
     // constructor
-    public Character(String name, String clas, int lifePoints, int damageMax, int damageMin, Guns guns){
+    public Character(String name, String characterClass, int lifePoints, int damageMax, int damageMin, Guns guns){
         this.name = name;
         this.characterClass = characterClass;
         this.lifePoints = 100;
@@ -21,7 +21,25 @@ public class Character {
         return name;
     }
 
-    public String
+    public String getCharacterClass(){
+        return characterClass;
+    }
+
+    public int getLifePoints(){
+        return lifePoints;
+    }
+
+    public int getDamageMax(){
+        return damageMax;
+    }
+
+    public int getDamageMin(){
+        return damageMin;
+    }
+
+    public Guns getGuns(){
+        return guns;
+    }
 
 
 }
