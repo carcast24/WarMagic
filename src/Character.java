@@ -2,17 +2,15 @@ public class Character {
     private String name;
     private String characterClass;
     private int lifePoints;
-    private int damageMax;
-    private int damageMin;
+    private int damageMax = 30;
+    private int damageMin = 10;
     private Guns guns;
 
     // constructor
-    public Character(String name, String characterClass, int lifePoints, int damageMax, int damageMin, Guns guns){
+    public Character(String name, String characterClass, int lifePoints, Guns guns){
         this.name = name;
         this.characterClass = characterClass;
         this.lifePoints = 100;
-        this.damageMax = 30;
-        this.damageMin = 20;
         this.guns = null;
     }
 
@@ -39,6 +37,31 @@ public class Character {
 
     public Guns getGuns(){
         return guns;
+    }
+    // metodo atacar 
+
+    public void atackSimple (Character user1, Character opponent){
+        if (user1.getLifePoints() >0 && opponent.getLifePoints() > 0) {
+            int max = getDamageMax();
+            int min = getDamageMin();
+            int damage = (int)(Math.random() * (max - min + 1) + min);
+
+            // se aplica el daño
+            opponent.LifePoints -= damage;
+
+            // evitar vida negativa 
+
+            if (opponent.lifePoints < 0) {
+            opponent.lifePoints = 0;
+            }
+            // mensaje de accion
+
+            System.out.println(user1.getName() + "ataco a " + opponent.getName() + "\n" +
+                                "daño causado es: " + damage + "vida restante de " + opponent.getName() + "\n" + 
+                                opponent.getLifePoints());
+
+
+        }
     }
 
 
