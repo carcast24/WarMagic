@@ -48,12 +48,7 @@ public class Character {
 
             // se aplica el daño
             opponent.takeDamage(damage);
-
-            // evitar vida negativa 
-
-            if (opponent.lifePoints < 0) {
-            opponent.lifePoints = 0;
-            }
+            
             // mensaje de accion
 
             System.out.println(user1.getName() + "ataco a " + opponent.getName() + "\n" +
