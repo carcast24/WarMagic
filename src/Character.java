@@ -78,7 +78,7 @@ public class Character {
 
     // atacar con arma
     // evalua si el peronaje tiene un arma, si esta vivo y si el oponente esta vivo
-    private void attackWithWeapon(Character opponent){
+    public void attackWithWeapon(Character opponent){
         int damage = 0;
         if (this.weapon != null && this.isAlive() && opponent.isAlive()){
             damage = weapon.generateDamage();
