@@ -40,18 +40,18 @@ public class Character {
     }
     // metodo atacar 
 
-    public void atackSimple (Character user1, Character opponent){
-        if (user1.getLifePoints() >0 && opponent.getLifePoints() > 0) {
+    public void atackSimple (Character attacker, Character opponent){
+        if (attacker.getLifePoints() >0 && opponent.getLifePoints() > 0) {
             int max = getDamageMax();
             int min = getDamageMin();
             int damage = (int)(Math.random() * (max - min + 1) + min);
 
             // se aplica el daño
             opponent.takeDamage(damage);
-            
+
             // mensaje de accion
 
-            System.out.println(user1.getName() + "ataco a " + opponent.getName() + "\n" +
+            System.out.println(attacker.getName() + "ataco a " + opponent.getName() + "\n" +
                                 "daño causado es: " + damage + "vida restante de " + opponent.getName() + "\n" + 
                                 opponent.getLifePoints());
 
@@ -73,6 +73,17 @@ public class Character {
 
     public boolean isAlive(){
         return this.lifePoints > 0; // evalua si lifePoints es mayor a cero y devuelve true o false
+
+    }
+
+    // atacar con arma
+    // evalua si el peronaje tiene un arma, si esta vivo y si el oponente esta vivo
+    private void attackWithWeapon(Character opponent){
+        int damage = 0;
+        if (this.weapon != null && this.isAlive() && opponent.isAlive()){
+            damage = weapon.generateDamage();
+        }
+        opponent.takeDamage(damage);
 
     }
 
