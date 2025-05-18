@@ -4,14 +4,14 @@ public class Character {
     private int lifePoints;
     private int damageMax = 30;
     private int damageMin = 10;
-    private Guns guns;
+    private Weapon weapon;
 
     // constructor
-    public Character(String name, String characterClass, int lifePoints, Guns guns){
+    public Character(String name, String characterClass, int lifePoints, Weapon weapon){
         this.name = name;
         this.characterClass = characterClass;
         this.lifePoints = 100;
-        this.guns = null;
+        this.weapon = null;
     }
 
     //Getter
@@ -35,8 +35,8 @@ public class Character {
         return damageMin;
     }
 
-    public Guns getGuns(){
-        return guns;
+    public Weapon getWeapon(){
+        return weapon;
     }
     // metodo atacar 
 
@@ -47,7 +47,7 @@ public class Character {
             int damage = (int)(Math.random() * (max - min + 1) + min);
 
             // se aplica el daño
-            opponent.LifePoints -= damage;
+            opponent.lifePoints -= damage;
 
             // evitar vida negativa 
 
