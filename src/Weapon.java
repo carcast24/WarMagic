@@ -29,12 +29,8 @@ public class Weapon {
         return damageMin;
     }
 
-    // metodo
- public void useWeapon(Character use, Character opponent){
-        if (use.getLifePoints() > 0 && opponent.getLifePoints() > 0){ // si la vida de personaje1 es mayor a 1 y oponente  igual
-            int damageWeapon = (int)(Math.random() *(use.getDamageMax() - use.getDamageMin() + 1) + use.getDamageMin()); // se asigna un numero aleatorio entre 30 y 10
-        }
- }// metodo incompleto, primero hacer metodo recibir daño en Character y atacar
+    // metodo generar daño
+    
 
 
 }
