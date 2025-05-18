@@ -47,7 +47,7 @@ public class Character {
             int damage = (int)(Math.random() * (max - min + 1) + min);
 
             // se aplica el daño
-            opponent.lifePoints -= damage;
+            opponent.takeDamage(damage);
 
             // evitar vida negativa 
 
@@ -61,6 +61,16 @@ public class Character {
                                 opponent.getLifePoints());
 
 
+        }
+    }
+
+    // metodo recibir daño
+    public void takeDamage(int damage){
+        this.lifePoints -= damage;
+
+        // validacion para evitar negativos
+        if (this.lifePoints < 0){
+            this.lifePoints = 0;
         }
     }
 
