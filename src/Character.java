@@ -74,6 +74,13 @@ public class Character {
         }
     }
 
+    // metodo esta vivo
+
+    public boolean isAlive(){
+        return this.lifePoints > 0; // evalua si lifePoints es mayor a cero y devuelve true o false
+
+    }
+
 
 
 
