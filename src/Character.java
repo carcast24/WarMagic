@@ -40,8 +40,8 @@ public class Character {
     }
     // metodo atacar 
 
-    public void atackSimple (Character attacker, Character opponent){
-        if (attacker.getLifePoints() >0 && opponent.getLifePoints() > 0) {
+    public void atackSimple (Character opponent){
+        if (this.getLifePoints() >0 && opponent.getLifePoints() > 0) {
             int max = getDamageMax();
             int min = getDamageMin();
             int damage = (int)(Math.random() * (max - min + 1) + min);
@@ -51,7 +51,7 @@ public class Character {
 
             // mensaje de accion
 
-            System.out.println(attacker.getName() + "ataco a " + opponent.getName() + "\n" +
+            System.out.println(this.getName() + "ataco a " + opponent.getName() + "\n" +
                                 "daño causado es: " + damage + "vida restante de " + opponent.getName() + "\n" + 
                                 opponent.getLifePoints());
 
