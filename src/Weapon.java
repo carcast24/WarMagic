@@ -32,7 +32,8 @@ public class Weapon {
     // metodo generar daño
 
     public int generateDamage(){
-        return (int)(Math.random() * (damageMax - damageMin + 1) + damageMin);
+        return (int)(Math.random() * (damageMax - damageMin + 1) + damageMin); // genera un numero de 20 al 40
+
     }
 
 
