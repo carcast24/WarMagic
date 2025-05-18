@@ -30,7 +30,11 @@ public class Weapon {
     }
 
     // metodo generar daño
-    
+
+    public int generateDamage(){
+        return (int)(Math.random() * (damageMax - damageMin + 1) + damageMin);
+    }
+
 
 
 }
