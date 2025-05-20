@@ -47,6 +47,16 @@ public class RunGame {
         switch (opcionWeapon){
             case 1 :
                 armaSeleccionada = new Baculo();
+                break;
+            case 2 :
+                armaSeleccionada = new Daga();
+                break;
+            case 3 :
+                armaSeleccionada = new ExtensorGarras();
+                break;
+            default:
+                System.out.println("Opcion invalida, no se equipa arma:");
+                armaSeleccionada = null;
         }
 
 
