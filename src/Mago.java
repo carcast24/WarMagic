@@ -8,4 +8,9 @@ public class Mago extends Character{
         super.atackSimple(opponent);
 
     }
+    @Override
+    public void attackWithWeapon(Character opponent){
+        System.out.println("Mago usa su Arma!");
+        super.attackWithWeapon(opponent);
+    }
 }
