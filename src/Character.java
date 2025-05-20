@@ -81,7 +81,7 @@ public class Character {
     public void attackWithWeapon(Character opponent){
         int damage = 0;
         if (this.weapon != null && this.isAlive() && opponent.isAlive()){
-            damage = weapon.generateDamage();
+            damage = weapon.generateDamage(this); // this llama la subclase que la usa
         }
         opponent.takeDamage(damage);
 
