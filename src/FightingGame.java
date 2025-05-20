@@ -10,7 +10,7 @@ public class FightingGame {
 
     // metodo turn
 
-    private void turn(Character attacker, Character opponent){
+    public void turn(Character attacker, Character opponent){
         if (attacker.getWeapon()  != null){
             attacker.attackWithWeapon(opponent);
         } else {
