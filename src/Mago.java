@@ -10,7 +10,7 @@ public class Mago extends Character{
     }
     @Override
     public void attackWithWeapon(Character opponent){
-        System.out.println("Mago usa su Arma!");
+        System.out.println(this.getName() + " usa su Arma!");
         super.attackWithWeapon(opponent);
     }
 }
