@@ -15,6 +15,5 @@ public class Baculo extends Weapon{
         }else{
             return baseDamage - 3;
         }
-        return baseDamage;
     }
 }
