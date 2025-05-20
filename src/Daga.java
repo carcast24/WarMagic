@@ -1,5 +1,5 @@
 public class Daga extends Weapon{
-    public Daga(String name, String type){
+    public Daga(){// dejo por defecto los nombres
         super("Daga Sagrada", "Oscura");
     }
     //sobre escribe metodo
