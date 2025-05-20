@@ -1,5 +1,5 @@
 public class Baculo extends Weapon{
-    public Baculo(String name, String type){
+    public Baculo(){ //dejo por  defecto los nombres
         super("Mil almas del caos","Infernal");
     }
 
