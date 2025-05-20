@@ -35,6 +35,12 @@ public class Weapon {
         return (int)(Math.random() * (damageMax - damageMin + 1) + damageMin); // genera un numero de 20 al 40
 
     }
+    // sobrecargado, si se quiere usar con una clase especifica
+    public int generateDamage(Character user){
+        return generateDamage();
+        // genera un numero de 20 al 40
+
+    }
 
 
 
