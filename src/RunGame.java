@@ -134,7 +134,8 @@ public class RunGame {
         System.out.println("Arma: " + jugador2.getWeapon());
         System.out.println("--------------------------------------------");
 
-
+        // se llama al metodo controlador en este caso startFight
+        FightingGame runGame = new FightingGame(jugador1,jugador2);
 
 
 
