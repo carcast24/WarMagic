@@ -16,4 +16,7 @@ public class Baculo extends Weapon{
             return baseDamage - 3;
         }
     }
+    @Override
+    public String toString() {
+        return getName();
 }

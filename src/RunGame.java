@@ -28,6 +28,7 @@ public class RunGame {
         System.out.println("2. Vampiro");
         System.out.println("3. Hombre Lobo");
         int opcionClass = scanner.nextInt();
+        scanner.nextLine(); //limpiar bufer
 
         // elegir arma
         System.out.println("+++++ Elige Tu Arma +++++");
@@ -35,6 +36,7 @@ public class RunGame {
         System.out.println("2. Daga.");
         System.out.println("3. Extensor de Garras");
         int opcionWeapon = scanner.nextInt();
+        scanner.nextLine();// limpiar bufer
 
         //asignar arma
         switch (opcionWeapon){

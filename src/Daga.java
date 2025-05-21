@@ -12,4 +12,7 @@ public class Daga extends Weapon{
             return baseDamage - 3;
         }
     }
+    @Override
+    public String toString() {
+        return getName();
 }
