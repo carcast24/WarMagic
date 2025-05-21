@@ -85,8 +85,8 @@ public class Character {
         }
         opponent.takeDamage(damage);
 
-        System.out.println(this.name + "ataca con arma " + weapon.getName() + "\n" + " a " + opponent.getName());
-        System.out.println("Genera un daño de " + damage + " vida actual " + opponent.getLifePoints());
+        System.out.println(this.name + " Ataca con arma " + weapon.getName() + "\n" + " a " + opponent.getName());
+        System.out.println(" Genera un daño de " + damage + " vida actual " + opponent.getLifePoints());
     }
 
 

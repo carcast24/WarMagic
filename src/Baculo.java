@@ -1,6 +1,6 @@
 public class Baculo extends Weapon{
     public Baculo(){ //dejo por  defecto los nombres
-        super("Mil almas del caos","Infernal");
+        super(" Baculo Mil almas del caos "," Infernal ");
     }
 
     /**

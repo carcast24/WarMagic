@@ -1,6 +1,6 @@
 public class ExtensorGarras extends Weapon{
     public ExtensorGarras(){// dejo por defecto el nombre
-        super("Garras de Kalion", "Tesoro Divino");
+        super(" Garras de Kalion ", " Tesoro Divino ");
     }
     @Override
     public int generateDamage(Character user){

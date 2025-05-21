@@ -1,6 +1,6 @@
 public class Daga extends Weapon{
     public Daga(){// dejo por defecto los nombres
-        super("Daga Sagrada", "Oscura");
+        super(" Daga Sagrada ", " Oscura ");
     }
     //sobre escribe metodo
     @Override

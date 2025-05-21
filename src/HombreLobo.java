@@ -1,10 +1,10 @@
 public class HombreLobo extends Character{
     public HombreLobo(String name, int lifePoints, Weapon weapon){
-        super(name,"Alpha tribu de los crecientes",lifePoints,weapon);
+        super(name," Alpha tribu de los crecientes ",lifePoints,weapon);
     }
     @Override // permite sobre escribir un metodo
     public void atackSimple (Character opponent){
-        System.out.println("Aturde con aullido!");
+        System.out.println(" Aturde con aullido! ");
         super.atackSimple(opponent);
 
     }

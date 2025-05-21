@@ -22,7 +22,8 @@ public class FightingGame {
 
     public void startFight(){
         System.out.println("Inicia la lucha entre " + "\n" +
-                            user1.getName() + "y " + user2.getName() );
+                            user1.getName() + " y " + user2.getName() );
+        System.out.println("___________________________________________");
         int ronda = 1;
 
         while(user1.isAlive() && user2.isAlive()){ // el loop funciona solo si ambos usuarios estan con vida
@@ -30,16 +31,18 @@ public class FightingGame {
             System.out.println("----- Ronda " + ronda + "-----");
 
             turn(user1,user2); // se ejecuta el primer ataque
+            System.out.println("___________________________________________");
 
             if (user2.isAlive()){ // se evalua si el personaje esta vivo si es asi
                 turn(user2,user1); // se ejecuta el segundo ataque invirtiendo los roles
+                System.out.println("___________________________________________");
             }
             ronda++; // se aumenta la vaeiable ronda en 1
         }
 
         // cuando uno de los dos quede en cero osea isAlive es false
         // se evalua y se da el veredicto con un if condicional
-
+        System.out.println("___________________________________________");
         if (user1.isAlive()){
             System.out.println(" jugador " + user1.getName() + " a ganado la batalla!!");
         }else{

@@ -1,10 +1,10 @@
 public class Vampiro extends Character {
     public Vampiro(String name, int lifePoints, Weapon weapon){
-        super (name,"Teniente de la orden Oscura", lifePoints,weapon);
+        super (name," Teniente de la orden Oscura ", lifePoints,weapon);
     }
     @Override // permite sobre escribir un metodo
     public void atackSimple (Character opponent){
-        System.out.println("Ataque Frontal");
+        System.out.println(" Ataque Frontal ");
         super.atackSimple(opponent);
 
     }
