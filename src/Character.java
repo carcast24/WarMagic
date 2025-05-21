@@ -11,7 +11,7 @@ public class Character {
         this.name = name;
         this.characterClass = characterClass;
         this.lifePoints = 100;
-        this.weapon = null;
+        this.weapon = weapon;
     }
 
     //Getter
@@ -88,6 +88,9 @@ public class Character {
         System.out.println(this.name + "ataca con arma " + weapon.getName() + "\n" + " a " + opponent.getName());
         System.out.println("Genera un daño de " + damage + " vida actual " + opponent.getLifePoints());
     }
+
+
+
 
 
 

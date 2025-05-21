@@ -4,8 +4,8 @@ public class RunGame {
     public static void main(String [] args){
         // se eligen los personajes
         Scanner scanner = new Scanner(System.in);
-        Character jugador1= null;
-        Weapon armaSeleccionada = null;
+        Character jugador1;
+        Weapon armaSeleccionada;
 
         System.out.println("----- Bienvenido a MagicWar-----");
         System.out.println("+++++ Elige  Tu Personaje +++++");
@@ -22,6 +22,14 @@ public class RunGame {
             }
         }while(name1.trim().isEmpty());
 
+        // elegir arma
+        System.out.println("+++++ Elige Tu Arma +++++");
+        System.out.println("1. Baculo");
+        System.out.println("2. Daga.");
+        System.out.println("3. Extensor de Garras");
+        int opcionWeapon = scanner.nextInt();
+        scanner.nextLine();// limpiar bufer
+
         // elegir clase
         System.out.println("***** Elige La Clase *****");
         System.out.println("1. Mago.");
@@ -30,13 +38,7 @@ public class RunGame {
         int opcionClass = scanner.nextInt();
         scanner.nextLine(); //limpiar bufer
 
-        // elegir arma
-        System.out.println("+++++ Elige Tu Arma +++++");
-        System.out.println("1. Baculo");
-        System.out.println("2. Daga.");
-        System.out.println("3. Extensor de Garras");
-        int opcionWeapon = scanner.nextInt();
-        scanner.nextLine();// limpiar bufer
+
 
         //asignar arma
         switch (opcionWeapon){
@@ -51,7 +53,7 @@ public class RunGame {
                 break;
             default:
                 System.out.println("Opcion invalida, no se equipa arma:");
-                armaSeleccionada = null;
+                armaSeleccionada = new Baculo();
         }
         // Asignar clase
         switch (opcionClass){
@@ -79,8 +81,8 @@ public class RunGame {
 
         // jugador dos
 
-        Character jugador2= null;
-        Weapon armaSeleccionada2 = null;
+        Character jugador2;
+        Weapon armaSeleccionada2;
 
         System.out.println("----- Bienvenido a MagicWar-----");
         System.out.println("+++++ Elige  Tu Personaje +++++");
@@ -95,6 +97,13 @@ public class RunGame {
             }
         }while(name2.trim().isEmpty());
 
+        // elegir arma
+        System.out.println("+++++ Elige Tu Arma +++++");
+        System.out.println("1. Baculo");
+        System.out.println("2. Daga.");
+        System.out.println("3. Extensor de Garras");
+        int opcionWeapon2 = scanner.nextInt();
+
         // elegir clase
         System.out.println("***** Elige La Clase *****");
         System.out.println("1. Mago.");
@@ -102,12 +111,6 @@ public class RunGame {
         System.out.println("3. Hombre Lobo");
         int opcionClass2 = scanner.nextInt();
 
-        // elegir arma
-        System.out.println("+++++ Elige Tu Arma +++++");
-        System.out.println("1. Baculo");
-        System.out.println("2. Daga.");
-        System.out.println("3. Extensor de Garras");
-        int opcionWeapon2 = scanner.nextInt();
 
         //asignar arma
         switch (opcionWeapon2){
@@ -154,6 +157,7 @@ public class RunGame {
 
         // se llama al metodo controlador en este caso startFight
         FightingGame runGame = new FightingGame(jugador1,jugador2);
+        runGame.startFight();
 
 
 

@@ -41,6 +41,9 @@ public class Weapon {
         // genera un numero de 20 al 40
 
     }
+    public String toString(){
+        return this.name;
+    }
 
 
 
