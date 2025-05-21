@@ -14,4 +14,5 @@ public class ExtensorGarras extends Weapon{
     @Override
     public String toString() {
         return getName();
+    }
 }

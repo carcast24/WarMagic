@@ -15,4 +15,5 @@ public class Daga extends Weapon{
     @Override
     public String toString() {
         return getName();
+    }
 }

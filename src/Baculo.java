@@ -19,4 +19,5 @@ public class Baculo extends Weapon{
     @Override
     public String toString() {
         return getName();
+    }
 }
