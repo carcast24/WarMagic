@@ -11,8 +11,16 @@ public class RunGame {
         System.out.println("+++++ Elige  Tu Personaje +++++");
         System.out.println("------ Jugador 1 ------");
 
-        System.out.println("Escribe el Nombre");
-        String name1 = scanner.nextLine();
+
+        // me toco colocar un condicional para que no acepte el nombre en blanco
+        String name1;
+        do {
+            System.out.println("Escribe el Nombre");
+            name1 = scanner.nextLine();
+            if (name1.trim().isEmpty()){
+                System.out.println(" El nombre no puede ir vacio, porfavor digite un nombre");
+            }
+        }while(name1.trim().isEmpty());
 
         // elegir clase
         System.out.println("***** Elige La Clase *****");
@@ -76,8 +84,14 @@ public class RunGame {
         System.out.println("+++++ Elige  Tu Personaje +++++");
         System.out.println("------ Jugador 2 ------");
 
-        System.out.println("Escribe el Nombre");
-        String name2 = scanner.nextLine();
+        String name2;
+        do {
+            System.out.println("Escribe el Nombre");
+            name2 = scanner.nextLine();
+            if (name2.trim().isEmpty()){
+                System.out.println(" El nombre no puede ir vacio, porfavor digite un nombre");
+            }
+        }while(name2.trim().isEmpty());
 
         // elegir clase
         System.out.println("***** Elige La Clase *****");
