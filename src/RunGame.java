@@ -97,17 +97,17 @@ public class RunGame {
         // Asignar clase
         switch (opcionClass2){
             case 1:
-                jugador2 = new Mago(name1,100, armaSeleccionada2);
+                jugador2 = new Mago(name2,100, armaSeleccionada2);
                 break;
             case 2:
-                jugador2 = new Vampiro(name1,100, armaSeleccionada2);
+                jugador2 = new Vampiro(name2,100, armaSeleccionada2);
                 break;
             case 3:
-                jugador2 = new HombreLobo(name1,100, armaSeleccionada2);
+                jugador2 = new HombreLobo(name2,100, armaSeleccionada2);
                 break;
             default:
                 System.out.println("opcion incorrecta, se asigna por defecto un Mago");
-                jugador2 = new Mago(name1,100, armaSeleccionada2);
+                jugador2 = new Mago(name2,100, armaSeleccionada2);
         }
 
         //asignar arma
