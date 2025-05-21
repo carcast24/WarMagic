@@ -28,22 +28,6 @@ public class RunGame {
         System.out.println("3. Extensor de Garras");
         int opcionWeapon = scanner.nextInt();
 
-        // Asignar clase
-        switch (opcionClass){
-            case 1:
-                jugador1 = new Mago(name1,100,armaSeleccionada);
-                break;
-            case 2:
-                jugador1 = new Vampiro(name1,100,armaSeleccionada);
-                break;
-            case 3:
-                jugador1 = new HombreLobo(name1,100,armaSeleccionada);
-                break;
-            default:
-                System.out.println("opcion incorrecta, se asigna por defecto un Mago");
-                jugador1 = new Mago(name1,100,armaSeleccionada);
-        }
-
         //asignar arma
         switch (opcionWeapon){
             case 1 :
@@ -58,6 +42,21 @@ public class RunGame {
             default:
                 System.out.println("Opcion invalida, no se equipa arma:");
                 armaSeleccionada = null;
+        }
+        // Asignar clase
+        switch (opcionClass){
+            case 1:
+                jugador1 = new Mago(name1,100,armaSeleccionada);
+                break;
+            case 2:
+                jugador1 = new Vampiro(name1,100,armaSeleccionada);
+                break;
+            case 3:
+                jugador1 = new HombreLobo(name1,100,armaSeleccionada);
+                break;
+            default:
+                System.out.println("opcion incorrecta, se asigna por defecto un Mago");
+                jugador1 = new Mago(name1,100,armaSeleccionada);
         }
 
         // se mmuestra el personaje creado
