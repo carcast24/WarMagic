@@ -73,7 +73,7 @@ public class RunGame {
 
         // se mmuestra el personaje creado
 
-        System.out.println("+*+*+* Personaje Elejido +*+*+*");
+        System.out.println("+*+*+* Personaje Elegido +*+*+*");
         System.out.println("Nombre: " + jugador1.getName());
         System.out.println("Clase: " + jugador1.getCharacterClass());
         System.out.println("Arma: " + jugador1.getWeapon());
